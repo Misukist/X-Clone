@@ -1,16 +1,77 @@
-# React + Vite
+# Twitter Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [https://x-clone-2pfe.onrender.com/](https://x-clone-2pfe.onrender.com/)
 
-Currently, two official plugins are available:
+> ⚠️ Huomio: Jos luot uuden käyttäjän sovellukseen, **älä käytä salasanaa, jota käytät muualla**. Tämä on vain testi- ja portfolio-projekti.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Twitter Clone Screenshot](./public/Twitter_Showcase.png)
 
-## React Compiler
+## Projektin kuvaus
+Tämä on Twitterin kaltainen klooni, jossa käyttäjät voivat luoda tilejä, kirjautua sisään ja julkaista viestejä. Projekti on rakennettu modernilla tech-stackilla React/Vite frontendillä ja Node.js/Express backendillä.  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Sovelluksessa on toteutettu mm. seuraavat ominaisuudet:
 
-## Expanding the ESLint configuration
+- Käyttäjän rekisteröinti ja kirjautuminen JWT-tunnistuksella
+- Profiilien näyttäminen ja muokkaaminen
+- Viestien (postien) luominen ja listaaminen
+- Notifikaatiot ja interaktiot käyttäjien välillä
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Teknologiat
+
+### Frontend
+- React + Vite
+- Tailwind CSS
+- Chakra UI
+- React Router
+- React Query
+
+### Backend
+- Node.js + Express
+- MongoDB + Mongoose
+- JWT Authentication
+- Cookie-parser
+- Cloudinary (kuvien hallinta)
+
+---
+
+## Asennus ja käyttö
+
+1. Klonkaa repositorio:
+
+git clone https://github.com/<username>/X-Clone.git
+cd X-Clone
+
+
+2. Asenna backendin riippuvuudet:
+
+npm install
+
+
+3. Asenna frontendin riippuvuudet:
+
+npm install --prefix frontend
+
+
+4. Asenna backendin riippuvuudet:
+
+npm install
+
+
+5. Luo .env tiedosto juureen ja lisää tarvittavat environment-muuttujat:
+
+MONGO_URI=<MongoDB connection string>
+JWT_SECRET=<JWT secret>
+CLOUDINARY_CLOUD_NAME=<Cloudinary cloud name>
+CLOUDINARY_API_KEY=<Cloudinary API key>
+CLOUDINARY_SECRET=<Cloudinary secret>
+
+
+6. Käynnistä kehityspalvelin:
+
+npm run dev
+
+
+
+
