@@ -4,7 +4,7 @@
 
 > ⚠️ Huomio: Jos luot uuden käyttäjän sovellukseen, **älä käytä salasanaa, jota käytät muualla**. Tämä on vain testi- ja portfolio-projekti.
 
-![Twitter Clone Screenshot](.frontend/public/Twitter_Showcase.png)
+![Twitter Clone Screenshot](.frontend/public/Readme/Twitter_Showcase.png)
 
 ##  📖 Projektin kuvaus
 Tämä on Twitterin kaltainen klooni, jossa käyttäjät voivat luoda tilejä, kirjautua sisään ja julkaista viestejä. Projekti on rakennettu modernilla tech-stackilla React/Vite frontendillä ja Node.js/Express backendillä.  
