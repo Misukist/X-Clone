@@ -18,13 +18,21 @@
     "react-query": "^4.0.0",
     "react-router-dom": "^7.9.4",
     "twitterclone": "file:..",
+<<<<<<< HEAD
     "vite": "^7.1.7",
     "@vitejs/plugin-react": "^5.0.3"
+=======
+    "vite": "^7.1.7"
+>>>>>>> 47e20a348accf57a9368e2fb043cb3b1af8f42b2
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@types/react": "^18.3.26",
     "@types/react-dom": "^18.3.7",
+<<<<<<< HEAD
+=======
+    "@vitejs/plugin-react": "^5.0.3",
+>>>>>>> 47e20a348accf57a9368e2fb043cb3b1af8f42b2
     "autoprefixer": "^10.4.21",
     "daisyui": "^4.12.24",
     "eslint": "^9.36.0",
@@ -32,6 +40,11 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.4.0",
     "postcss": "^8.5.6",
+<<<<<<< HEAD
     "tailwindcss": "^3.4.18"
+=======
+    "tailwindcss": "^3.4.18",
+    "vite": "^7.1.7"
+>>>>>>> 47e20a348accf57a9368e2fb043cb3b1af8f42b2
   }
 }
