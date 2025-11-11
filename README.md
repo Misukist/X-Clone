@@ -1,6 +1,9 @@
 # 🐦 X Clone
 
 **Live Demo:** [https://x-clone-2pfe.onrender.com/](https://x-clone-2pfe.onrender.com/)
+> 💡 Voit testata sovellusta valmiilla käyttäjällä tai tehdä oman:  
+> **Käyttäjä:** testikäyttäjä1  
+> **Salasana:** 123456
 
 > ⚠️ Huomio: Jos luot uuden käyttäjän sovellukseen, **älä käytä salasanaa, jota käytät muualla**. Tämä on vain testi- ja portfolio-projekti.
 
