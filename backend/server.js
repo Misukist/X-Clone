@@ -1,3 +1,4 @@
+import path from "path";
 import express from "express"; 
 import dotenv from "dotenv";
 import connectMongoDB from "./db/connectMongoDB.js";
@@ -22,6 +23,7 @@ cloudinary.config({
 
 const app = express(); 
 const PORT = process.env.PORT || 5000;
+const __dirname = path.resolve();
 
 app.use(express.json({limit:"5mb"})); //express middleware joka kertoo että kaikki json tallennetaan req.bodyyn, limitoi kuvan koko jotta Dos hyökkäyksiltä vältytään
 
@@ -32,8 +34,18 @@ app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
-app.use("/api/posts", postRoutes)
-app.use("/api/notifications", notificationRoutes)
+app.use("/api/posts", postRoutes);
+app.use("/api/notifications", notificationRoutes);
+
+if (process.env.NODE_ENV === "production") {
+  const frontendPath = path.join(__dirname, "frontend/dist");
+  app.use(express.static(frontendPath));
+
+  // Catch-all route for React
+  app.get(/^(?!\/api).*/, (req, res) => {
+    res.sendFile(path.join(frontendPath, "index.html"));
+  });
+}
 
 
 app.listen(PORT, () => {
